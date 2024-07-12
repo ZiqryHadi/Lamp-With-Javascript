@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Javascript Lamp
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="data.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align: center; font-size: 20px;"> LAMP WITH JAVASCRIPT </h1>
+    <hr>
+    <p style="font-family: Monospace; text-align: justify; text-justify: inter-word; font-size: 12px; margin-top: 15px;">hi! my name is dky and this is my lamp project, just learn this from dea afrizal on youtube and styling it a little bit. </p>
+    
+    <div class="container">
+    <h2> Buttons </h2>
+    <div class="isi">
+      <div class="content">
+        <img src="off.gif" class="img"  id="lamp1">
+        <div>
+          <button class="saklar" onclick="saklar('on', 1)"> on </button>
+          <button class="saklar" onclick="saklar('off', 1)"> off </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="off.gif" class="img"  id="lamp2">
+        <div>
+          <button class="saklar" onclick="saklar('on', 2)"> on </button>
+          <button class="saklar" onclick="saklar('off', 2)"> off </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="off.gif" class="img"  id="lamp3">
+        <div>
+          <button class="saklar" onclick="saklar('on', 3)"> on </button>
+          <button class="saklar" onclick="saklar('off', 3)"> off </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="container">
+    <h2> Toggle </h2>
+    <div class="isi">
+      <div class="content">
+        <img src="off.gif" class="img"  id="lamp4">
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle1" onchange="toggle()">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="content">
+        <img src="off.gif" class="img"  id="lamp5">
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle2" onchange="toggle()">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="content">
+        <img src="off.gif" class="img"  id="lamp6">
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle3" onchange="toggle()">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <p style="font-family: Monospace; text-align: center; font-size: 10px; margin-top: 60px;"> - Created by Fudlail Ziqry Maulana Hadi -</p>
+  </body>
+  </html>
