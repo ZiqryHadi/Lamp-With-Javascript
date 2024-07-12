@@ -1,0 +1,119 @@
+body {
+  background-color: #222222;
+  color: white;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-family: Monospace;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.isi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 165px;
+}
+
+.img{
+  margin-top: 30px;
+  height: 90px;
+  width: 50px;
+}
+
+.saklar {
+  background-color: #222222;
+  color: white;
+  font-size: 10px;
+  border-radius: 5px;
+  border-color: #222222;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-inline: 25px;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 3px;
+}
+
+/*REFERENCE : https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 17px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #222222;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #222222;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
